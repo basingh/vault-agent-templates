@@ -1,0 +1,4 @@
+{{ with $secrets := secret "azure/creds/edu-app" }}
+Client_id : {{ $secrets.Data.client_id }}
+Client_secret : {{ $secrets.Data.client_secret }}
+{{ end }}
